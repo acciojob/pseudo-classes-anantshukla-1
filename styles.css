@@ -1,1 +1,54 @@
+/* 1. Background Color using :root */
+:root {
+    --bg-color: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 2. Article with Paragraphs */
+article p:first-child {
+    background-color: black;
+    color: white;
+}
+
+article p:nth-child(2) {
+    /* Standard text color (default) */
+    color: initial; 
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* 3. Unordered List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: gray; /* All items background */
+    width: 50%;
+    padding: 10px;
+}
+
+/* Every odd item having a white background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items font size */
+ul li:first-child, 
+ul li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item: Pink background */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
 /*  your css code here. If applicable */
